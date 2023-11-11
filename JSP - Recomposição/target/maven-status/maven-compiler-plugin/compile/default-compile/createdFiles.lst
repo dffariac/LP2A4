@@ -1,0 +1,10 @@
+util\FormatarData.class
+servlets\LoginServlet.class
+DAO\AtividadeDAO.class
+model\Atividade.class
+servlets\ListarAtividadeServlet.class
+util\HibernateUtil.class
+servlets\AddAtividadeServlet.class
+servlets\InscricaoAtividadeServlet.class
+DAO\UserDAO.class
+model\User.class

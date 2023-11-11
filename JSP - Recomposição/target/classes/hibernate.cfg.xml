@@ -1,0 +1,29 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- MySQL Database connection settings -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/atividade1</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">juaN@1230</property>
+        <!-- JDBC connection pool settings (if using a connection pool library) -->
+        <!-- For example, using HikariCP:
+        <property name="hibernate.hikari.minimumIdle">5</property>
+        <property name="hibernate.hikari.maximumPoolSize">20</property>
+        -->
+        <!-- Select the MySQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- Echo the SQL to stdout for debugging -->
+        <property name="show_sql">true</property>
+        <!-- Set the current session context -->
+        <property name="current_session_context_class">thread</property>
+        <!-- Drop and re-create the database schema on startup (if desired for development) -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!-- Mapping for your entity classes -->
+        <mapping class="model.Atividade" />
+        <mapping class="model.User" />
+        <!-- Uncomment and add mappings for other entity classes as needed -->
+        <!-- <mapping class="model.OtherEntity" /> -->
+    </session-factory>
+</hibernate-configuration>
